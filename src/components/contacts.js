@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-
+import {Link} from 'react-router-dom'
 const ContactForm = () => {
     const [firstname, setFirstName] = useState('')
     const [lastname, setLastName] = useState('')
@@ -122,6 +122,7 @@ const ContactForm = () => {
                     
                     <button type="submit" onClick={formSubmit} disabled={state.submitting}>Send</button>
                 </form>
+                <button type="button"><Link to="/">Run along Home!</Link></button>
         </div>
     )
 }
