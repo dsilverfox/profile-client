@@ -4,8 +4,8 @@ import {
   Route,
 } from "react-router-dom";
 import './App.css';
-import ContactForm from './components/contacts';
-import InProgress from "./components/InProgress"
+import ContactForm from './components/contacts/contacts';
+import InProgress from "./components/InProgress/InProgress"
 
 function App() {
 
