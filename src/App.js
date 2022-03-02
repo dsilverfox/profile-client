@@ -3,6 +3,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 //Material UI Imports
 import '@fontsource/roboto/300.css';
@@ -17,7 +19,7 @@ import InProgress from "./components/InProgress/InProgress";
 import Navigation from "./components/navigation/Navigation";
 import AboutMe from "./components/aboutme/aboutme";
 import Projects from "./components/projects/projects";
-import Resume from "./components/projects/projects";
+import Resume from "./components/resume/resume";
 import Writing from "./components/writing/writing";
 
 function App() {
