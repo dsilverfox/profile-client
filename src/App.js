@@ -21,6 +21,7 @@ import AboutMe from "./components/aboutme/aboutme";
 import Projects from "./components/projects/projects";
 import Resume from "./components/resume/resume";
 import Writing from "./components/writing/writing";
+import HireMe from "./components/HireMe/HireMe"
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/resume" element={<Resume/>}/>
             <Route path="/writing" element={<Writing/>}/>
+            <Route path="/hireme" element={<HireMe/>}/>
           </Routes>
           <Footer/>
       </BrowserRouter>
