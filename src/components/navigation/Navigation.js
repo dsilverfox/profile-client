@@ -1,41 +1,42 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
-import NavLink from 'react-bootstrap/NavLink'
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import MyLogo from '../../Assets/SilverfoxLogo.jpg';
+import NavDropdown from 'react-bootstrap/esm/NavDropdown'
 
-const Navigation = () =>{
-    return(
+const Navigation = () => {
+    return (
         <div>
             <>
                 <Navbar bg="dark" variant="dark">
-                    <Container>
+                    <Container fluid>
                         <Navbar.Brand href="/">
-                           <Link to="/"> <img
+                            <img
                                 alt="Silverfox Standard Logo"
                                 src={MyLogo}
                                 width="60"
                                 height="100"
-                                className="Logo"
-                            /></Link>{' '}
-                            Portfolio: Devon Silverfox-Patchett
+                            />{' '}
+                            Devon Silverfox-Patchett
                         </Navbar.Brand>
+                        <Navbar.Toggle aria-controls="navbar-dark-example" />
                         <Nav>
-                            <NavLink>
-                                <Link to="/aboutme">About Me</Link>
-                            </NavLink>
-                            <NavLink>
-                                <Link to="/projects">Projects</Link>
-                            </NavLink>
-                            <NavLink>
-                                <Link to="/resume">Resume</Link>
-                            </NavLink>
-                            <NavLink>
-                                <Link to="/writing">My Writing</Link>
-                            </NavLink>
+                            <Navbar.Collapse id="navbar-dark-example">
+                                <NavDropdown
+                                    id="nav-dropdown-dark-example"
+                                    title="Pages"
+                                    menuVariant="dark"
+                                >
+                                    <NavDropdown.Item><Link to="/aboutme" style={{ textDecoration: 'none', color: '#d87df6'}}>About Me</Link></NavDropdown.Item>
+                                    <NavDropdown.Item><Link to="/projects" style={{ textDecoration: 'none', color: '#d87df6' }}>Projects</Link></NavDropdown.Item>
+                                    <NavDropdown.Item><Link to="/resume" style={{ textDecoration: 'none', color: '#d87df6' }}>Resume</Link></NavDropdown.Item>
+                                    <NavDropdown.Item><Link to="/writing" style={{ textDecoration: 'none', color: '#d87df6' }}>Writing</Link></NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item><Link to="/contact" style={{ textDecoration: 'none', color: '#d87df6' }}>Contact Me</Link></NavDropdown.Item>
+                                </NavDropdown>
+                            </Navbar.Collapse>
                         </Nav>
                     </Container>
                 </Navbar>

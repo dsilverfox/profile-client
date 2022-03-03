@@ -1,3 +1,43 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #000000;
+  color:#B3BBBD;
 }
+.resume {
+  background-color: #000000;
+  height: 100vh;
+  width:100%;
+  margin-bottom: -10rem;
+}
+.responsive-resume {
+  margin-left: 25vw;
+  overflow:hidden;
+  width: 100%;
+  height: 100%;
+}
+.download {
+  float:left;
+  margin-top: -35rem;
+  margin-left: 5rem;
+}
+.footer {
+  background-color: #000000;
+  color: #B3BBBD;
+  position: fixed;
+  margin-top: 4rem;
+  width: 100vw;
+  height: 2rem;
+}
+
+.navbar {
+  background-color: #000000;
+  color:#B3BBBD;
+  padding: 0rem 2rem 0rem 3rem;
+}
+
+a {
+  color: #d87df6;
+}
+

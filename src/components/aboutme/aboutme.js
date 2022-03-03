@@ -1,12 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 const AboutMe = () => {
 
     return (
-        <div>
-            I will hold the About Me cards
-            <button type="button"><Link to="/contact">Contact the Fox!</Link></button>
-        </div>
+        <Container fluid>
+            <main>
+                <Row>
+                    <Col>
+                        <section className='photo'>
+                            I will hold the profile photo.
+                        </section>
+                    </Col>
+                    <Col>
+                        <section className='story'>
+                            I will hold the about me story.
+                        </section>
+                    </Col>
+                </Row>
+            </main>
+        </Container>
     )
 }
 

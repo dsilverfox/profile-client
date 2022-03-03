@@ -15,7 +15,7 @@ import '@fontsource/roboto/700.css';
 //Page Imports
 import ContactForm from './components/contacts/contacts';
 import Footer from "./components/footer/footer";
-import InProgress from "./components/InProgress/InProgress";
+import Splash from "./components/Splash/Splash";
 import Navigation from "./components/navigation/Navigation";
 import AboutMe from "./components/aboutme/aboutme";
 import Projects from "./components/projects/projects";
@@ -29,7 +29,7 @@ function App() {
       <BrowserRouter>
           <Navigation/>
           <Routes>
-            <Route path="/" element={<InProgress />}/>
+            <Route path="/" element={<Splash />}/>
             <Route path="/contact" element={<ContactForm/>}/>
             <Route path="/aboutme" element={<AboutMe/>}/>
             <Route path="/projects" element={<Projects/>}/>
