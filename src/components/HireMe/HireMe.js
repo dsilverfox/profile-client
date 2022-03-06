@@ -38,6 +38,7 @@ const HireMe = () => {
     };
     return (
         <div>
+            <p>I will hold the rate sheet for websites and the modified contact form for contract-for-hire.</p>
             <form onSubmit={handleSubmit}>
 
                 <label htmlFor='firstname'>First Name:</label>
