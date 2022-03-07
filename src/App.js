@@ -27,14 +27,7 @@ import HireMe from "./components/HireMe/HireMe"
 
 function App() {
 
-  const inlineStyle = {
-    background: 'black',
-    left: '50%',
-    top: '50%',
-    position: 'absolute',
-    padding: '20px',
-    transform: 'translate(-50%, -50%',
-  }
+ 
 
   return (
     <div className="App">

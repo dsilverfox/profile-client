@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import {Link} from 'react-router-dom'
+
+
 const ContactForm = () => {
     const [firstname, setFirstName] = useState('')
     const [lastname, setLastName] = useState('')
@@ -37,11 +38,12 @@ const ContactForm = () => {
     };
 
     return (
-        <div>
+        <div className="contacts">
                 <form onSubmit={handleSubmit}>
                     
                     <label htmlFor='firstname'>First Name:</label>
                     <input
+                    autoFocus
                         id="firstname"
                         name="firstname"
                         type="text"
@@ -52,7 +54,7 @@ const ContactForm = () => {
                         field="firstname"
                         errors={state.errors}
                     />
-
+                        <br/>
                     <label htmlFor='lastname'>Last Name:</label>
                     <input
                         id="lastname"
@@ -66,7 +68,7 @@ const ContactForm = () => {
                         errors={state.errors}
                     />
 
-
+                <br />
                     <label htmlFor='company'>Company:</label> 
                     <input 
                     id="company"
@@ -79,7 +81,7 @@ const ContactForm = () => {
                     field="company"
                     errors={state.errors}
                     />
-
+                <br />
                     <label htmlFor='email'>Your email:</label>
                     <input 
                     id="email"
@@ -92,7 +94,7 @@ const ContactForm = () => {
                     field="email"
                     errors={state.errors}
                     />
-                    
+                <br />
                     <label htmlFor='phone'>Your Phone:</label>
                     <input 
                     id="phone"
@@ -106,7 +108,7 @@ const ContactForm = () => {
                     errors={state.errors}
                     />
 
-
+                <br />
                     <label htmlFor='message'> Your message:</label>
                     <textarea
                     id="message" 
@@ -119,10 +121,10 @@ const ContactForm = () => {
                     field="message"
                     errors={state.errors}
                     />
-                    
-                    <button type="submit" onClick={formSubmit} disabled={state.submitting}>Send</button>
+                <br />
+                    <h1><button type="submit" onClick={formSubmit} disabled={state.submitting}>Send</button></h1>
                 </form>
-                <button type="button"><Link to="/">Run along Home!</Link></button>
+
         </div>
     )
 }

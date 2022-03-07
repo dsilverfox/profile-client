@@ -24,19 +24,19 @@ const Splash = () => {
         <div>
           <Parallax bgImage={bgImage} strength={500}>
           <div style={{height: 500}}>
-          <div style={inlineStyle}>Synopsis of About Me</div>
+          <div style={inlineStyle}>A little about me and why I chose Web Development</div>
           </div>
         </Parallax>
          <h1>~~~~~~~~~</h1>
         <Parallax bgImage={bgImage2} strength={-200}>
           <div style={{ height: 500 }}>
-            <div style={inlineStyle}>Synopsis of Projects</div>
+            <div style={inlineStyle}>Explanations of the projects I have completed and the technologies used therein.</div>
           </div> 
         </Parallax>
         <h1>~~~~~~~~~</h1>
         <Parallax bgImage={bgImage3} strength={500}>
           <div style={{ height: 500 }}>
-            <div style={inlineStyle}>Synopsis of Resume</div>
+            <div style={inlineStyle}>The five most important pieces of my resume.</div>
           </div>
         </Parallax>
         <h1>~~~~~~~~~</h1>
@@ -48,13 +48,13 @@ const Splash = () => {
         <h1>~~~~~~~~~</h1>
         <Parallax bgImage={bgImage5} strength={500}>
           <div style={{ height: 500 }}>
-            <div style={inlineStyle}>Synopsis of Contact Me</div>
+            <div style={inlineStyle}>A form you can use to contact me with further questions.</div>
           </div>
         </Parallax>
         <h1>~~~~~~~~~</h1>
         <Parallax bgImage={bgImage6} strength={-200}> 
           <div style={{ height: 500 }}>
-            <div style={inlineStyle}>Synopsis of Hire Me</div>
+            <div style={inlineStyle}>A page offering my freelance rates for writing and other creative profiles. It includes a form to contact me to start a freelance contract.</div>
           </div>
         </Parallax>
         </div>
