@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import APIURL from './helpers/environment'
+import APIURL from '../../helpers/environment'
 
 
 const ContactForm = () => {
