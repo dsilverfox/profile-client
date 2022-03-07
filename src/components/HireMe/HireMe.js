@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-
+import APIURL from './helpers/environment'
 
 const HireMe = () => {
     const [firstname, setFirstName] = useState('')
@@ -20,7 +20,7 @@ const HireMe = () => {
     }
 
     const formSubmit = () => {
-        fetch("http://localhost:3000/contract/contract", {
+        fetch(`${APIURL}/contract/contract`, {
             method: "POST",
             body: JSON.stringify({
                 contracts: {

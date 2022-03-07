@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import APIURL from './helpers/environment'
 
 
 const ContactForm = () => {
@@ -18,7 +19,7 @@ const ContactForm = () => {
     }
 
     const formSubmit = () => {
-        fetch("http://localhost:3000/contact/contact", {
+        fetch(`${APIURL}/contact/contact`, {
             method: "POST",
             body: JSON.stringify({
                 contacts: {
