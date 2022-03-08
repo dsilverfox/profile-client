@@ -42,7 +42,7 @@ const Splash = () => {
         <h1>~~~~~~~~~</h1>
         <Parallax bgImage={bgImage4} strength={-200}> 
           <div style={{ height: 500 }}>
-            <div style={inlineStyle}>Synopsis of Writing</div>
+            <div style={inlineStyle}>The writing I have published in physical form.</div>
           </div>
         </Parallax>
         <h1>~~~~~~~~~</h1>
