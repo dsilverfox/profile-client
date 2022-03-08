@@ -1,9 +1,9 @@
 /* Browser Settings */
 
 /* Chrome version 29 and above */
-@media screen and (-webkit-min-device-pixel-ratio:0)
+/* @media screen and (-webkit-min-device-pixel-ratio:0)
 and (min-resolution:.001dpcm) {
-selector{ property:value; }}
+selector{ property:value; }} */
 
 /* Chrome version 22-28 */
 /* @media screen and(-webkit-min-device-pixel-ratio:0) {

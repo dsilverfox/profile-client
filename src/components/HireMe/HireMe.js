@@ -87,6 +87,7 @@ const HireMe = () => {
 
                 <label htmlFor='firstname'>First Name:</label>
                 <input
+                    autofocus
                     id="firstname"
                     name="firstname"
                     type="text"
