@@ -13,7 +13,7 @@ const Projects = () => {
         return (
             <div className="projects">
                 <CardGroup>
-                    <Card bg='black' style={{ width: '18rem', height:'31rem', borderRadius: '3rem' }}>
+                    <Card bg='black' style={{ borderRadius: '3rem' }}>
                     <Card.Img variant="top" style={{height: '5rem'}} src={CSSCreature} />
                     <Card.Body>
                         <Card.Title>CSS Creature</Card.Title>
@@ -22,19 +22,21 @@ const Projects = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                    <Card bg='black' style={{ width: '18rem', height: '31rem', borderRadius: '3rem' }}>
+                    <Card bg='black' style={{ borderRadius: '3rem' }}>
                         <Card.Img variant="top" style={{ height: '5rem' }} src={API1} />
                         <Card.Body>
                             <Card.Title>Random Generators</Card.Title>
                             <Card.Text>
-                                <p>Used CSS, Bootstrap 5x, and Javascript to build a site that would allow writers, gamers and others who lose writing time --to researching random details-- to generate those details on demand.</p>
-                                <p>Made calls to third party APIs to gather details to be randomly provided.</p>
-                                <p>Created Mock API’s for additional details where an API did not exist previously.</p>
+                                <ul>
+                                    <li>Used CSS, Bootstrap 5x, and Javascript to build a site that would allow writers, gamers and others who lose writing time --to researching random details-- to generate those details on demand.</li>
+                                    <li>Made calls to third party APIs to gather details to be randomly provided.</li>
+                                    <li>Created Mock API’s for additional details where an API did not exist previously.</li>
+                                </ul>
 
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                    <Card bg='black' style={{ width: '18rem', height: '31rem',borderRadius: '3rem' }}>
+                    <Card bg='black' style={{ borderRadius: '3rem' }}>
                         <Card.Img variant="top" style={{ height: '5rem' }} src={API2} />
                         <Card.Body>
                             <Card.Title>Random World Holidays</Card.Title>
@@ -43,26 +45,30 @@ const Projects = () => {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                    <Card bg='black' style={{ width: '18rem', height: '31rem',borderRadius: '3rem' }}>
+                    <Card bg='black' style={{ borderRadius: '3rem' }}>
                         <Card.Img variant="top" style={{ height: '5rem' }} src={Blue} />
                         <Card.Body>
                             <Card.Title>Team Project</Card.Title>
                             <Card.Text>
-                                <p>Used CSS, Bootstrap, Javascript, React and Node.js to build a site with a team which enabled a user to search for a tropical fruit. Once they had found one, they were able to make notes about what they chose to grow. This was fully CRUD enabled</p>
-                                <p>Worked with a team to create this project using GitHub for version management, pushed this project to Heroku both on server and client side.</p>
-                                <p>Made 3rd party API calls to fetch plant data. Built our own Express database for notes.</p>
+                                <ul>
+                                <li>Used CSS, Bootstrap, Javascript, React and Node.js to build a site with a team which enabled a user to search for a tropical fruit. Once they had found one, they were able to make notes about what they chose to grow. This was fully CRUD enabled</li>
+                                <li>Worked with a team to create this project using GitHub for version management, pushed this project to Heroku both on server and client side.</li>
+                                <li>Made 3rd party API calls to fetch plant data. Built our own Express database for notes.</li>
+                                </ul>
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                    <Card bg='black' style={{ width: '18rem', height: '31rem',borderRadius: '3rem' }}>
+                    <Card bg='black' style={{ borderRadius: '3rem' }}>
                         <Card.Img variant="top" style={{ height: '5rem' }} src={Red} />
                         <Card.Body>
                             <Card.Title>See Your Story</Card.Title>
                             <Card.Text>
-                                <p>Used CSS, Bootstrap, Javascript, React (Legacy), and Node.js to build a site which allows users to make notes about the stories they are writing and the characters they are using for each of those stories</p>
-                                <p>The stories and characters sections were both fully CRUD capable.</p>
-                                <p>Used React-Router-Dom v6 for navigation.</p>
-                                <p>Implemented role based access which allowed admin users access to specific routes while protecting those routes from users.</p>
+                                <ul>
+                                <li>Used CSS, Bootstrap, TypeScript, React (Legacy), and Node.js to build a site which allows users to make notes about the stories they are writing and the characters they are using for each of those stories</li>
+                                <li>The stories and characters sections were both fully CRUD capable.</li>
+                                <li>Used React-Router-Dom v6 for navigation.</li>
+                                <li>Implemented role based access which allowed admin users access to specific routes while protecting those routes from users.</li>
+                                </ul>
                             </Card.Text>
                         </Card.Body>
                     </Card>

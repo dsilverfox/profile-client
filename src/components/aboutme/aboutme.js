@@ -13,7 +13,7 @@ const AboutMe = () => {
                 <Row>
                     <Col>
                         <section className='photo'>
-                           <img width='600' height='900' src={AboutMeIMG} alt="Devon Silverfox in her home office."/>
+                           <img width='400' height='700' src={AboutMeIMG} alt="Devon Silverfox in her home office."/>
                         </section>
                     </Col>
                     <Col>

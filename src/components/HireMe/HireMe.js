@@ -97,7 +97,7 @@ const HireMe = () => {
                     field="firstname"
                     errors={state.errors}
                 />
-                <br />
+
                 <label htmlFor='lastname'>Last Name:</label>
                 <input
                     id="lastname"
@@ -124,7 +124,7 @@ const HireMe = () => {
                     field="company"
                     errors={state.errors}
                 />
-                <br />
+ 
                 <label htmlFor='email'>Your email:</label>
                 <input
                     id="email"
@@ -164,7 +164,7 @@ const HireMe = () => {
                     field="website"
                     errors={state.errors}
                 />
-                <br />
+
                 <label htmlFor='message'> Your message:</label>
                 <textarea
                     id="message"

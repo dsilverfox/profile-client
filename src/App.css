@@ -1,3 +1,23 @@
+/* Browser Settings */
+
+/* Chrome version 29 and above */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+selector{ property:value; }}
+
+/* Chrome version 22-28 */
+/* @media screen and(-webkit-min-device-pixel-ratio:0) {
+selector { -chrome-:only (;
+property:value;
+);}
+} */
+
+/* Chrome, Safari, and also the Edge Browser and Firefox */
+/* @media and (-webkit-min-device-pixel-ratio:0) {
+selector { property:value; }
+} */
+
+/* Manual CSS */
 .App {
   text-align: center;
   height: 100%;
@@ -20,12 +40,15 @@
 h1 {
   font-family: 'Caveat Brush', cursive;
 }
-.resume {
+
+.resume, .projects, .hire, .contacts {
   background-color: #000000;
   background-image:url("./Assets/ResumePageBG.jpg");
-  height: 130vh;
+  background-repeat:repeat;
+  height: auto;
   width:100%;
   color: white;
+
 }
 
 .responsive-resume {
@@ -46,7 +69,7 @@ h1 {
   color: #B3BBBD;
   position: absolute;
   width: 105%;
-  height: 8rem;
+  height: 5rem;
 }
 
 .navbar {
@@ -63,14 +86,15 @@ a {
 }
 
 .card {
-  height: 25rem;
+  height: 35rem;
   margin: 5rem 1rem 10rem 1rem;
   text-align: left;
-  box-shadow: .5rem 1rem 1rem gray
+  box-shadow: .5rem 1rem 1rem gray;
+  border-radius: 3rem;
 }
 
 .card-text {
-  height: 20rem;
+  height: 25rem;
   overflow-y: auto;
   width: 100%;
 }
@@ -95,21 +119,6 @@ a {
   margin: 2rem 2rem 2rem 0rem;
 }
 
-.projects {
-  background-color: #000000;
-  background-image:url("./Assets/ResumePageBG.jpg");
-  height: 130vh;
-  width:100%;
-  color: white;
-}
-
-.contacts {
-    background-image:url("./Assets/ResumePageBG.jpg");
-    height: 130vh;
-    width:100%;
-    color: white;
-}
-
 .contacts label {
   background-color:black;
   margin: 1rem;
@@ -122,14 +131,7 @@ a {
   border: none;
   color: white;
   background: black;
-}
-
-
-.hire {
-    background-image:url("./Assets/ResumePageBG.jpg");
-    height: 130vh;
-    width:100%;
-    color: white;
+  margin-bottom: 5rem;
 }
 
 .hire label {
@@ -144,6 +146,7 @@ a {
   border: none;
   color: white;
   background: black;
+  margin-bottom: 5rem;
 }
 
 /* Hire for Contract Table */
@@ -198,7 +201,7 @@ table.darkTable tfoot td {
 
 .writing {
 
-    height: 130vh;
+    height: auto;
     width:100%;
     color: white;
 }

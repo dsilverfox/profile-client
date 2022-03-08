@@ -9,7 +9,7 @@ const Resume = () => {
         <div className="resume">
             <CardGroup className='resumeCards'>
                 <Card bg='black' text='white'
-                    style={{ width: '18rem', borderRadius: '3rem' }}
+                    style={{ borderRadius: '3rem' }}
                     className="resumeCard">
                     <Card.Header></Card.Header>
                     <Card.Body>
@@ -23,7 +23,7 @@ const Resume = () => {
                     </Card.Body>
                 </Card>
                 <Card bg='black' text='white'
-                    style={{ width: '18rem', borderRadius: '3rem' }}
+                    style={{ borderRadius: '3rem' }}
                     className="resumeCard">
                     <Card.Header></Card.Header>
                     <Card.Body>
@@ -34,7 +34,7 @@ const Resume = () => {
                     </Card.Body>
                 </Card>
                 <Card bg='black' text='white'
-                    style={{ width: '18rem', borderRadius: '3rem' }}
+                    style={{ borderRadius: '3rem' }}
                     className="resumeCard">
                     <Card.Header></Card.Header>
                     <Card.Body>
@@ -50,7 +50,7 @@ const Resume = () => {
                     </Card.Body>
                 </Card>
                 <Card bg='black' text='white'
-                    style={{ width: '18rem', borderRadius: '3rem' }}
+                    style={{ borderRadius: '3rem' }}
                     className="resumeCard">
                     <Card.Header></Card.Header>
                     <Card.Body>
@@ -61,7 +61,7 @@ const Resume = () => {
                     </Card.Body>
                 </Card>
                 <Card bg='black' text='white'
-                    style={{ width: '18rem', borderRadius: '3rem' }}
+                    style={{ borderRadius: '3rem' }}
                     className="resumeCard">
                     <Card.Header></Card.Header>
                     <Card.Body>
@@ -73,6 +73,7 @@ const Resume = () => {
                                 <p><strong>Databases/ORM:</strong><p>PostgreSQL, Sequelize</p></p>
                                 <p><strong>Web Technologies:</strong><p>HTML, CSS, APIs, Responsive Web Design</p></p>
                                 <p><strong>Styling Libraries:</strong><p>Bootstrap, Reactstrap</p></p>
+
                         </Card.Text>
                     </Card.Body>
                 </Card>
