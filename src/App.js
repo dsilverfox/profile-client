@@ -22,6 +22,7 @@ import Projects from "./components/projects/projects";
 import Resume from "./components/resume/resume";
 import Writing from "./components/writing/writing";
 import HireMe from "./components/HireMe/HireMe"
+import Certification from "./components/certifications/certifications"
 
 
 
@@ -41,6 +42,7 @@ function App() {
             <Route path="/resume" element={<Resume/>}/>
             <Route path="/writing" element={<Writing/>}/>
             <Route path="/hireme" element={<HireMe/>}/>
+            <Route path="/certification" element={<Certification/>}/>
           </Routes>
           <Footer/>
       </BrowserRouter>
