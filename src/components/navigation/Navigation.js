@@ -1,12 +1,9 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
-import MyLogo from '../../Assets/SilverfoxLogo.jpg';
-import NavDropdown from 'react-bootstrap/esm/NavDropdown'
 import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+
 
 const Navigation = () => {
     return (
