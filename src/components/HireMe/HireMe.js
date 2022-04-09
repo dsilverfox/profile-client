@@ -13,13 +13,6 @@ const HireMe = () => {
     const [message, setMessage] = useState('')
     const [state, handleSubmit] = useForm('mzbogkal');
 
-    // eslint-disable-next-line no-unused-vars
-    function ContactForm() {
-        if (state.succeeded) {
-            return <div>Thank you for signing up!</div>;
-        }
-    }
-
     const formSubmit = () => {
         fetch(`${APIURL}/contract/contract`, {
             method: "POST",
@@ -39,7 +32,19 @@ const HireMe = () => {
 
             }),
         });
+        console.log("Form Submitted");
     };
+
+   function stateReset(){
+        setFirstName('');
+        setLastName('');
+        setCompany('');
+        setEmail('');
+        setPhone('');
+        setWebsite('');
+        setMessage('');
+    };
+
     return (
         <div className="hire">
             <div className='examples'>
@@ -51,7 +56,7 @@ const HireMe = () => {
 
                 <label htmlFor='firstname'>First Name:</label>
                 <input
-                    autofocus
+                    autoFocus
                     id="firstname"
                     name="firstname"
                     type="text"
@@ -145,8 +150,10 @@ const HireMe = () => {
                 />
                 <br />
                 <h1><button type="submit" onClick={formSubmit} disabled={state.submitting}>Send</button></h1>
-                <p><strong>All content on created sites remains the sole property of the site owner. All code remains sole property of Devon Silverfox-Patchett</strong></p>
             </form>
+                <h1><button onClick={stateReset}>Reset</button></h1>
+                <p><strong>All content on created sites remains the sole property of the site owner. All code remains sole property of Devon Silverfox-Patchett</strong></p>
+           
         </div>
     )
     

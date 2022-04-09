@@ -12,12 +12,6 @@ const ContactForm = () => {
     const [message, setMessage] = useState('')
     const [state, handleSubmit] = useForm('mbjwyojo');
 
- function ContactForm () {
-        if (state.succeeded) {
-            return <div>Thank you for signing up!</div>;
-        }
-    }
-
     const formSubmit = () => {
         fetch(`${APIURL}/contact/contact`, {
             method: "POST",
@@ -36,6 +30,16 @@ const ContactForm = () => {
 
             }),
         });
+        console.log("Form Submitted");
+    };
+
+    function stateReset() {
+        setFirstName('');
+        setLastName('');
+        setCompany('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
     };
 
     return (
@@ -125,7 +129,7 @@ const ContactForm = () => {
                 <br />
                     <h1><button type="submit" onClick={formSubmit} disabled={state.submitting}>Send</button></h1>
                 </form>
-
+            <h1><button onClick={stateReset}>Reset</button></h1>
         </div>
     )
 }
