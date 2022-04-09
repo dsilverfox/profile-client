@@ -7,6 +7,7 @@ import API2 from './projectcards/API2'
 import Blue from './projectcards/Blue'
 import Red from './projectcards/Red'
 
+
 const Projects = () => {
     const styles = {
         card: {
@@ -14,7 +15,7 @@ const Projects = () => {
             borderRadius: '3px',
             padding: '15px',
             width: '285px',
-            height: '35rem'
+            height: '800px'
         },
         image: {
             height: '200px',

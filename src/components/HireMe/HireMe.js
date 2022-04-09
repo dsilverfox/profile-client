@@ -41,47 +41,9 @@ const HireMe = () => {
     };
     return (
         <div className="hire">
-            <div className='ResponsiveTable'>
-                <table className='darkTable'>
-                    <tbody>
-                        <tr>
-                            <td>Pages</td>
-                            <td>HTML</td>
-                            <td>CSS</td>
-                            <td>JavaScript</td>
-                            <td>Database*</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>$50</td>
-                            <td>$75</td>
-                            <td>$100</td>
-                            <td>$175</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>$75</td>
-                            <td>$100</td>
-                            <td>$125</td>
-                            <td>$200</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>$100</td>
-                            <td>$125</td>
-                            <td>$150</td>
-                            <td>$225</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>$125</td>
-                            <td>$150</td>
-                            <td>$175</td>
-                            <td>$250</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p><strong>* Database tables include the cost to host the database and provide a custom domain name. $50/month will also be required for database and domain maintenance.</strong></p>
+            <div className='examples'>
+                {/* Add examples here. */}
+
             </div>
             <form onSubmit={handleSubmit}>
 
@@ -181,6 +143,7 @@ const HireMe = () => {
                 />
                 <br />
                 <h1><button type="submit" onClick={formSubmit} disabled={state.submitting}>Send</button></h1>
+                <p><strong>All content on created sites remains the sole property of the site owner. All code remains sole property of Devon Silverfox-Patchett</strong></p>
             </form>
         </div>
     )

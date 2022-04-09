@@ -6,6 +6,7 @@ import {
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+
 //Material UI Imports
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';

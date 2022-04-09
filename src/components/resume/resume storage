@@ -1,0 +1,29 @@
+                <Card bg='black' text='white'
+                    style={{ borderRadius: '3rem' }}
+                    className="resumeCard">
+                    <Card.Header></Card.Header>
+                    <Card.Body>
+                        <Card.Title> Technical Skills </Card.Title>
+                        <Card.Text>
+                        <ul style={{listStyle:'none'}}>
+                                <li><strong>Languages/Libraries:</strong></li>
+                                <li>JavaScript, TypeScript, Node.js, React, Express, JWT, Bcrypt</li>
+                                <li><strong>Cloud Technologies:</strong></li> 
+                                <li>Heroku, Firebase, GitHub </li>
+                                <li><strong>CI/CD:</strong></li>
+                                <li>Agile, Scrum, Git</li>
+                                <li><strong>Databases/ORM:</strong></li>
+                                <li>PostgreSQL, Sequelize</li>
+                                <li><strong>Web Technologies:</strong></li>
+                                <li>HTML, CSS, APIs, Responsive Web Design</li>
+                                <li><strong>Styling Libraries:</strong></li>
+                                <li>Bootstrap, Reactstrap</li>
+                        </ul>
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+            </CardGroup>
+        </div>
+    )
+}
+
