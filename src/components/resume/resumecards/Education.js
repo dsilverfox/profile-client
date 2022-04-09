@@ -27,12 +27,11 @@ class Education extends Component {
                 </div>
 
                 <div style={this.props.styles.card}>
-                    <p className='resume-text'>
-                        <ul style={{ listStyle: 'none' }}>
+    
+                    <ul style={{ listStyle: 'none' }} className='resume-text'>
                             <li style={{fontWeight: 'bold'}}>Eleven Fifty Academy, Web Development Immersive Learning Program, Indianapolis, IN, Graduated: February 24, 2022</li>
                             <li>26-week immersive learning program for Web Development taught with industry-guided curriculum, real-world project-based learning, and 500+ hours of logged coding time and training.</li>
                         </ul>
-                    </p>
 
                     <button onClick={this.handleClick}>Flip Card</button>
                 </div>

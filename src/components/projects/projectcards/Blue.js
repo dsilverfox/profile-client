@@ -27,11 +27,9 @@ class ProjectBlue extends Component {
                         alt="Screenshot of MWT Tropical"
                     />
                     <ul className="card-text">
-                        <p>
                         <li>Used CSS, Bootstrap, Javascript, React and Node.js to build a site with a team which enabled a user to search for a tropical fruit. Once they had found one, they were able to make notes about what they chose to grow. This was fully CRUD enabled</li>
                         <li>Worked with a team to create this project using GitHub for version management, pushed this project to Heroku both on server and client side.</li>
                         <li>Made 3rd party API calls to fetch plant data. Built our own Express database for notes.</li>
-                        </p>
                     </ul>
                     <button onClick={this.handleClick}>Flip Card</button>
                 </div>

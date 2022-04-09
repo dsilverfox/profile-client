@@ -50,17 +50,16 @@ h1 {
 .resume, .projects, .hire, .contacts {
   background-color: #000000;
   background-image:url("./Assets/ResumePageBG.jpg");
+  background-size: cover;
   background-repeat:repeat;
-  height: auto;
+  height: calc(100vh - 8rem);
   width:100%;
   color: white;
-
 }
 
 .projects-section {
   height: 100vh;
 }
-
 
 .sr-only {
   position: absolute;
@@ -77,29 +76,27 @@ h1 {
   width: 100%;
   height: 100%;
 }
+
 .download {
   float:left;
   margin-top: -35rem;
   margin-left: 5rem;
 }
-/* .footer {
-  overflow-y:hidden;
-  overflow-x:hidden;
-  background-color: black;
-  color: #B3BBBD;
-  position: absolute;
-} */
 
 .navbar .footer{
   background-color: #000;
   color:#B3BBBD;
   padding: 0rem 2rem 0rem 2rem;
   position: absolute;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .links {
-  margin: 0rem 2rem 0rem 2rem;
+  margin: 0rem 5rem 0rem 5rem;
 }
+
 a {
   color: #d87df6;
 }
@@ -205,52 +202,6 @@ button {
   color: white;
   background: black;
   margin-bottom: 5rem;
-}
-
-/* Hire for Contract Table */
-table.darkTable {
-  font-family: "Arial Black", Gadget, sans-serif;
-  border: 2px solid #000000;
-  width: 100%;
-  height: 200px;
-  text-align: center;
-  border-collapse: collapse;
-}
-table.darkTable td, table.darkTable th {
-  border: 1px solid #4A4A4A;
-  padding: 3px 2px;
-}
-table.darkTable tbody td {
-  font-size: 13px;
-  color: #E6E6E6;
-}
-table.darkTable thead {
-  background: #000000;
-  border-bottom: 3px solid #000000;
-}
-table.darkTable thead th {
-  font-size: 15px;
-  font-weight: bold;
-  color: #E6E6E6;
-  text-align: center;
-  border-left: 2px solid #4A4A4A;
-}
-table.darkTable thead th:first-child {
-  border-left: none;
-}
-
-table.darkTable tfoot {
-  font-size: 12px;
-  font-weight: bold;
-  color: #E6E6E6;
-  background: #000000;
-  background: -moz-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
-  background: -webkit-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
-  background: linear-gradient(to bottom, #404040 0%, #191919 66%, #000000 100%);
-  border-top: 1px solid #4A4A4A;
-}
-table.darkTable tfoot td {
-  font-size: 12px;
 }
 
 .writing {

@@ -54,7 +54,7 @@ const Splash = () => {
         <h1>~~~~~~~~~</h1>
         <Parallax bgImage={bgImage6} strength={-200}> 
           <div style={{ height: 500 }}>
-            <div style={inlineStyle}>A page offering my freelance rates for writing and other creative profiles. It includes a form to contact me to start a freelance contract.</div>
+            <div style={inlineStyle}>A page offering examples of template sites for other creatives. It includes a form to contact me to start a freelance contract.</div>
           </div>
         </Parallax>
         </div>

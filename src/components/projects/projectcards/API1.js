@@ -26,13 +26,11 @@ class ProjectAPI1 extends Component {
                         src={API1}
                         alt="Screenshot of Detail Generators"
                     />
-                    <p className='card-text'>
-                    <ul>
+                    <ul className='card-text'>
                         <li>Used CSS, Bootstrap 5x, and Javascript to build a site that would allow writers, gamers and others who lose writing time --to researching random details-- to generate those details on demand.</li>
                         <li>Made calls to third party APIs to gather details to be randomly provided.</li>
                         <li>Created Mock API’s for additional details where an API did not exist previously.</li>
                     </ul>
-                    </p>
                     <button onClick={this.handleClick}>Flip Card</button>
                 </div>
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import APIURL from '../../helpers/environment'
+import {Link} from 'react-router-dom'
 
 const HireMe = () => {
     const [firstname, setFirstName] = useState('')
@@ -42,7 +43,8 @@ const HireMe = () => {
     return (
         <div className="hire">
             <div className='examples'>
-                {/* Add examples here. */}
+                <h1><Link to="/Glass" style={{ textDecoration: 'none', color: '#fff' }}>Glass</Link></h1>
+                <h1><Link to="/Parallax" style={{ textDecoration: 'none', color: '#fff' }}>Parallax</Link></h1>
 
             </div>
             <form onSubmit={handleSubmit}>

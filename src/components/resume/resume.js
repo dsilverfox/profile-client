@@ -6,7 +6,7 @@ import Objective from './resumecards/Objective'
 import Education from './resumecards/Education'
 import Functional from './resumecards/Functional'
 import Technical from './resumecards/Technical'
-import Invisible from './resumecards/Invisible'
+
 
 const Resume = () => {
     const styles = {
@@ -44,18 +44,6 @@ const Resume = () => {
                     </section>
                 </Col>
                 <Col>
-                    {/* Spacer */}
-                    <section className="Resume-section">
-                        <Invisible styles={styles} />
-                    </section>
-                </Col>
-                <Col>
-                    {/* Spacer */}
-                    <section className="Resume-section">
-                        <Invisible styles={styles} />
-                    </section>
-                </Col>
-                <Col>
                     {/* Objective */}
                     <section className="Resume-section">
                         <Objective styles={styles} />
@@ -68,18 +56,6 @@ const Resume = () => {
                     </section>
                 </Col>
                 <Col>
-                    {/* Spacer */}
-                    <section className="Resume-section">
-                        <Invisible styles={styles} />
-                    </section>
-                </Col>
-                <Col>
-                    {/* Spacer */}
-                    <section className="Resume-section">
-                        <Invisible styles={styles} />
-                    </section>
-                </Col>
-                <Col>
                     {/* Functional */}
                     <section className="Resume-section">
                         <Functional styles={styles} />
@@ -89,12 +65,6 @@ const Resume = () => {
                     {/* Technical */}
                     <section className="Resume-section">
                         <Technical styles={styles} />
-                    </section>
-                </Col>
-                <Col>
-                    {/* Spacer */}
-                    <section className="Resume-section">
-                        <Invisible styles={styles} />
                     </section>
                 </Col>
             </Row>

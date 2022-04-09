@@ -26,15 +26,12 @@ class ProjectRed extends Component {
                         src={Red}
                         alt="Screenshot of MWT Tropical"
                     />
-                        <p className='card-text'>
-                            <ul>
+                    <ul className='card-text'>
                                 <li>Used CSS, Bootstrap, TypeScript, React (Legacy), and Node.js to build a site which allows users to make notes about the stories they are writing and the characters they are using for each of those stories</li>
                                 <li>The stories and characters sections were both fully CRUD capable.</li>
                                 <li>Used React-Router-Dom v6 for navigation.</li>
                                 <li>Implemented role based access which allowed admin users access to specific routes while protecting those routes from users.</li>
                             </ul>
-                        </p>
-              
                     <button onClick={this.handleClick}>Flip Card</button>
                 </div>
 

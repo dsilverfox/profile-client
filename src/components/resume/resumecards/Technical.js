@@ -27,8 +27,8 @@ class Technical extends Component {
                 </div>
 
                 <div style={this.props.styles.card}>
-                    <p className='resume-text'>
-                        <ul style={{ listStyle: 'none' }}>
+        
+                    <ul style={{ listStyle: 'none' }} className='resume-text'>
                             <li><strong>Languages/Libraries:</strong></li>
                             <li>JavaScript, TypeScript, Node.js, React, Express, JWT, Bcrypt</li>
                             <li><strong>Cloud Technologies:</strong></li>
@@ -42,7 +42,6 @@ class Technical extends Component {
                             <li><strong>Styling Libraries:</strong></li>
                             <li>Bootstrap, Reactstrap</li>
                         </ul>
-                        </p>
                     <button onClick={this.handleClick}>Flip Card</button>
                 </div>
             </ReactCardFlip>

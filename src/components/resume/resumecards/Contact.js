@@ -27,15 +27,12 @@ class Contact extends Component {
                 </div>
 
                 <div style={this.props.styles.card}>
-                    <p className='resume-text'>
-                        <ul style={{listStyle:'none'}}>
+                    <ul style={{ listStyle: 'none' }} className='resume-text'>
                             <li>Devon Silverfox</li>
                             <li><a href="tel:+1-765-610-6134">765-610-6134</a></li>
                             <li><a href="https://github.com/dsilverfox" target="_blank" rel="noreferrer">Github</a></li>
                             <li><a href="https://https://www.linkedin.com/in/devon-silverfox-patchett" target="_blank" rel="noreferrer">LinkedIn</a></li>
                         </ul>
-                    </p>
-
                     <button onClick={this.handleClick}>Flip Card</button>
                 </div>
             </ReactCardFlip>

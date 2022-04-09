@@ -25,6 +25,9 @@ import Writing from "./components/writing/writing";
 import HireMe from "./components/HireMe/HireMe"
 import Certification from "./components/certifications/certifications"
 
+//Site Examples
+import Glass from './components/HireMe/Examples/Glass/Glass'
+import Parallax from './components/HireMe/Examples/Parallax/Parallax'
 
 
 function App() {
@@ -44,6 +47,8 @@ function App() {
             <Route path="/writing" element={<Writing/>}/>
             <Route path="/hireme" element={<HireMe/>}/>
             <Route path="/certification" element={<Certification/>}/>
+            <Route path="/glass" element={<Glass/>}/>
+            <Route path="/parallax" element={<Parallax/>}/>
           </Routes>
           <Footer/>
       </BrowserRouter>
