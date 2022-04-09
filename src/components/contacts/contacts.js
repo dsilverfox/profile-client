@@ -27,7 +27,6 @@ const ContactForm = () => {
             }),
             headers: new Headers({
                 "Content-Type": "application/json"
-
             }),
         });
         console.log("Form Submitted");
@@ -42,6 +41,12 @@ const ContactForm = () => {
         setMessage('');
     };
 
+    window.onbeforeunload = () => {
+        for (const form of document.getElementsByTagName('form')) {
+            form.reset();
+        }
+    }
+    
     return (
         <div className="contacts">
                 <form onSubmit={handleSubmit}>
