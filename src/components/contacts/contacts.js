@@ -46,10 +46,11 @@ const ContactForm = () => {
             form.reset();
         }
     }
-    
+
     return (
         <div className="contacts">
-                <form onSubmit={handleSubmit}>
+            <h1>Fill out this form to contact me.</h1>
+                <form onSubmit={handleSubmit} className="form">
                     
                     <label htmlFor='firstname'>First Name:</label>
                     <input

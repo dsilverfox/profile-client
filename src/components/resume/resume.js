@@ -6,26 +6,18 @@ import Objective from './resumecards/Objective'
 import Education from './resumecards/Education'
 import Functional from './resumecards/Functional'
 import Technical from './resumecards/Technical'
+import Work from './resumecards/Work'
 
 
 const Resume = () => {
     const styles = {
         card: {
             border: '1px solid #eeeeee',
-            padding: '15px',
+            padding: '0.938rem',
             borderRadius: '50%',
-            width: '600px',
-            height: '600px',
-            margin: '5px',
-        },
-
-        card2: {
-            border: 'none',
-            padding: '15px',
-            borderRadius: '50%',
-            width: '600px',
-            height: '600px',
-            margin: '5px',
+            width: '30rem',
+            height: '30rem',
+            margin: '0.313rem',
         },
 
         image: {
@@ -35,7 +27,7 @@ const Resume = () => {
     };
 
     return (
-        <Container fluid>
+        <Container fluid className="resumeCards">
             <Row>
                 <Col>
                     {/* Contact */}
@@ -65,6 +57,12 @@ const Resume = () => {
                     {/* Technical */}
                     <section className="Resume-section">
                         <Technical styles={styles} />
+                    </section>
+                </Col>
+                <Col>
+                    {/* Technical */}
+                    <section className="Resume-section">
+                        <Work styles={styles} />
                     </section>
                 </Col>
             </Row>

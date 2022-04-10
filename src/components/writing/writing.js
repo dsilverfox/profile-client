@@ -15,7 +15,10 @@ const Writing = () => {
 
             <Col className="Images">
                 <img src={Anthology} alt="Cover of Shadows Redefined as found on Amazon.com" />
-                <a href="https://www.amazon.com/Shadows-Redefined-Passion-Literary-Anthology-ebook/dp/B09DBS6TNR/ref=sr_1_1?crid=28X39G4PTSTRT&keywords=Shadows+Redefined&qid=1646687084&sprefix=shadows+redefined%2Caps%2C163&sr=8-1"><h1>Buy Now</h1></a>
+                    <br />
+                <a href="https://www.amazon.com/Shadows-Redefined-Passion-Literary-Anthology-ebook/dp/B09DBS6TNR/ref=sr_1_1?crid=28X39G4PTSTRT&keywords=Shadows+Redefined&qid=1646687084&sprefix=shadows+redefined%2Caps%2C163&sr=8-1">
+    
+                    <h1>Buy Now</h1></a>
             </Col>
             </Row>
         </div>

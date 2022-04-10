@@ -12,8 +12,8 @@ const AboutMe = () => {
             <main>
                 <Row>
                     <Col>
-                        <section className='photo'>
-                           <img width='400' height='700' src={AboutMeIMG} alt="Devon Silverfox in her home office."/>
+                        <section >
+                            <img className='photo' src={AboutMeIMG} alt="Devon Silverfox in her home office."/>
                         </section>
                     </Col>
                     <Col>

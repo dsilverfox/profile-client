@@ -13,12 +13,13 @@ const Projects = () => {
             border: '1px solid #eeeeee',
             borderRadius: '3px',
             padding: '15px',
-            width: '285px',
-            height: '35rem'
+            width: '20rem',
+            height: '45rem',
+            margin: '2rem',
         },
         image: {
-            height: '200px',
-            width: '250px'
+            height: '12rem',
+            width: '17rem'
         },
     };
 

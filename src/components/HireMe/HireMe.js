@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import APIURL from '../../helpers/environment'
 import {Link} from 'react-router-dom'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
 
 const HireMe = () => {
     const [firstname, setFirstName] = useState('')
@@ -49,15 +51,20 @@ const HireMe = () => {
             form.reset();
         }
     }
-    
+
     return (
         <div className="hire">
-            <div className='examples'>
+            <Row className="examples">
+                <h2><strong>Example Websites</strong></h2>
+            <Col>
                 <h1><Link to="/Glass" style={{ textDecoration: 'none', color: '#fff' }}>Glass</Link></h1>
+            </Col>
+            <Col>
                 <h1><Link to="/Parallax" style={{ textDecoration: 'none', color: '#fff' }}>Parallax</Link></h1>
+            </Col>
+            </Row>
 
-            </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="form">
 
                 <label htmlFor='firstname'>First Name:</label>
                 <input
