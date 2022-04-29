@@ -51,7 +51,7 @@ const HireMe = () => {
             form.reset();
         }
     }
-
+    
     return (
         <div className="hire">
             <Row className="examples">
@@ -63,7 +63,7 @@ const HireMe = () => {
                 <h1><Link to="/Parallax" style={{ textDecoration: 'none', color: '#fff' }}>Parallax</Link></h1>
             </Col>
             </Row>
-
+            
             <form onSubmit={handleSubmit} className="form">
 
                 <label htmlFor='firstname'>First Name:</label>
@@ -161,11 +161,12 @@ const HireMe = () => {
                     errors={state.errors}
                 />
                 <br />
+                <p>Only click send once. Form does not clear when it submits.</p>
                 <h1><button type="submit" onClick={formSubmit} disabled={state.submitting}>Send</button></h1>
             </form>
+
                 <h1><button onClick={stateReset}>Reset</button></h1>
                 <p><strong>All content on created sites remains the sole property of the site owner. All code remains sole property of Devon Silverfox-Patchett</strong></p>
-           
         </div>
     )
     
