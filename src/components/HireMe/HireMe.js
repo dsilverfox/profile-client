@@ -65,7 +65,7 @@ const HireMe = () => {
             </Row>
             
             <form onSubmit={handleSubmit} className="form">
-
+                <p>Submit to request a consultation. </p>
                 <label htmlFor='firstname'>First Name:</label>
                 <input
                     autoFocus

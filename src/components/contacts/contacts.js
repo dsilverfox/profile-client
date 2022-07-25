@@ -49,7 +49,7 @@ const ContactForm = () => {
 
     return (
         <div className="contacts">
-            <h1>Fill out this form to contact me.</h1>
+            <h1>Fill out this form to contact me. Submit only once.</h1>
                 <form onSubmit={handleSubmit} className="form">
                     
                     <label htmlFor='firstname'>First Name:</label>
